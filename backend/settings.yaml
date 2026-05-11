@@ -1,0 +1,61 @@
+mysql:
+  host: 127.0.0.1
+  port: 3307
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  db: aicontract
+  user: root
+  password: "12345678"
+  log_level: 0
+  showSql: true
+
+
+logger:
+  level: info
+  prefix: '[knowledge]'
+  director: log
+  show_line: true
+  log_in_console: true
+
+chatconfig:
+  model_type: "deepseek-chat"
+  owner_apikey: "sk-8ab19a3712a44a4c9bdf63c713d3c86c"
+  base_url: "https://api.deepseek.com/v1"
+  request_timeout: 240s
+  system_default: "你是一名专业的知识库助手。
+  你的目标是：
+  1.精准——基于知识库中的信息，提供准确的答案。
+  2.简洁——用清晰易懂的语言回答问题，避免冗余。
+  3.友好——使用自然、亲切的语气，让用户更容易理解。
+  4.可引导——如果用户的问题不清楚，引导他们提供更多细节。
+  你的行为准则：
+  1.只根据知识库中的内容回答，不编造信息。
+  2.如果知识库中没有相关信息，直接告诉用户，不存在，并建议他们如何获取帮助。
+  3.根据用户的提问方式，调整回答的专业度和详细程度。"
+  user_default: "问题: {question}"
+
+embeddings:
+  apikey: d6abfdee-f4fb-4488-9698-f68faccc6340
+  endpoint: https://ark.cn-beijing.volces.com/api/v3
+  embedding: doubao-embedding-large-text-250515
+
+redis:
+  enable: true
+  addr: "127.0.0.1:8879"
+  username: ""
+  password: ""
+  db: 0
+  pool_size: 20
+  min_idle_conns: 5
+  dial_timeout: 5s
+  read_timeout: 3s
+  write_timeout: 3s
+
+compliance:
+  worker_concurrency: 2
+  queue_key: "compliance:jobs"
+  retry_limit: 3
+  task_timeout: 10m
+  ai_threshold_default: 0.75
+  report_output_dir: "uploads/compliance"
+  enable_semantic_match: true
+

@@ -1,0 +1,41 @@
+.DS_Store
+
+# Personal/editor state
+.cursor/
+.obsidian/
+.playwright-mcp/
+.spec-workflow/
+.idea/
+.vscode/
+
+# Backend
+backend/uploads/
+backend/.idea/
+
+# Local knowledge/work files
+knowledge/
+
+# Local planning/docs files
+合规比对功能培训文档.md
+开发任务清单.md
+现有代码分析报告.md
+项目技术栈与业务逻辑.md
+智能采购管理系统.md
+AI设备信息识别系统架构文档.md
+PROGRESS.md
+STARTUP.md
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs and local config
+*.log
+*.local
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*

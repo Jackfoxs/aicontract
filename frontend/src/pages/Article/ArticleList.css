@@ -1,0 +1,16 @@
+.article-list-container {
+  height: 100%;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.article-title {
+  font-weight: 500;
+  color: #1d2129;
+}
+

@@ -1,0 +1,45 @@
+.compliance-page {
+  padding: 16px;
+}
+
+.compliance-main {
+  height: calc(100vh - 120px);
+}
+
+.compliance-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.compliance-right {
+  height: 100%;
+  overflow: auto;
+}
+
+.compliance-card {
+  height: auto;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-item {
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.job-item.active {
+  border-color: var(--primary-6);
+}
+
+.issue-item,
+.highlight-item {
+  background: var(--color-bg-2);
+}
+
